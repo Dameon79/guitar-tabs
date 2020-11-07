@@ -4,19 +4,30 @@ import firebase from "firebase/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
-firebase.initializeApp({
-  apiKey: "AIzaSyCYqjlJuJVFrik6jgQaRLEDdnOazqJqkak",
-  authDomain: "guitar-tabs-95bf0.firebaseapp.com",
-  databaseURL: "https://guitar-tabs-95bf0.firebaseio.com",
-  projectId: "guitar-tabs-95bf0",
-  storageBucket: "guitar-tabs-95bf0.appspot.com",
-  messagingSenderId: "609982359130",
-  appId: "1:609982359130:web:7a1fe68613d842e49c1a63",
-  measurementId: "G-EJXTMKHYR7",
-});
+import FretBoard from "./components/Fretboard";
+import "./App.css";
 
 function App() {
-  return <div className="App">Alfie Smells</div>;
+  const chordData = {
+    name: "C",
+    stringPositions: {
+      1: 0,
+      2: 0,
+      3: 3,
+      4: 2,
+      5: 1,
+      6: 1,
+    },
+  };
+  return (
+    <React.Fragment>
+      <div className="fretContainer">
+        <div className="App">{chordData.name}</div>
+        <div className="nut" />
+        <FretBoard chordData={chordData} />
+      </div>
+    </React.Fragment>
+  );
 }
 
 export default App;

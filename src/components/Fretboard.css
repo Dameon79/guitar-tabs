@@ -1,0 +1,49 @@
+.fretBoard {
+  height: 200px;
+  max-width: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.fret {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.fret-bottom {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.fret-right {
+  border-left: 1px solid black;
+
+  display: flex;
+  align-items: center;
+}
+
+.fret-bottom:last-child {
+  border: none;
+  border-left: 1px solid black;
+}
+
+.fretBoard__finger {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  margin-left: -0.6rem;
+}
+.fretBoard__finger-last {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  margin-left: 1.6rem;
+}

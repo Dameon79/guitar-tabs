@@ -1,0 +1,9 @@
+.fretContainer {
+  width: 200px;
+}
+
+.nut {
+  width: 84%;
+  height: 10px;
+  background-color: black;
+}
