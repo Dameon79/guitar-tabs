@@ -38,6 +38,8 @@
   background-color: black;
   position: absolute;
   margin-left: -0.6rem;
+  color: white;
+  text-align: center;
 }
 .fretBoard__finger-last {
   width: 1.2rem;
@@ -46,4 +48,6 @@
   background-color: black;
   position: absolute;
   margin-left: 1.6rem;
+  color: white;
+  text-align: center;
 }
